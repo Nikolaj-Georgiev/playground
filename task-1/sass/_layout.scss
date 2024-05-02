@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-rows: 35vh 65vh;
+}
+
+.first {
+  background-color: orangered;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50%, 1fr));
+  grid-template-rows: 5% repeat(2, 40%) repeat(2, 10%);
+}
+
+.second {
+  background-color: greenyellow;
+}
