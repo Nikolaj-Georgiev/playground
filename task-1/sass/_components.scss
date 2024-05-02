@@ -1,6 +1,6 @@
 .first {
   column-gap: 5rem;
-  // align-content: center;
+
   &__heading {
     display: grid;
     grid-column: 1 /-1;
@@ -66,11 +66,85 @@
   }
 }
 
-.btn {
-  &__dark-blue {
+.btn__wrapper {
+  &--1 {
+    @extend %wrapper;
+    grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
-  &__light-blue {
+  &--2 {
+    @extend %wrapper;
+    grid-column: 1 / 2;
     grid-row: 4 / 5;
+  }
+}
+
+.btn {
+  margin-left: 9rem;
+  position: relative;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  padding-right: 9.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 3.5rem) 100%, 0 100%);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: start;
+
+  &__dark-blue {
+    background-color: $color-blue-dark;
+    color: $color-white;
+    z-index: 2;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-blue-dark;
+    }
+  }
+  &__light-blue {
+    background-color: $color-blue-light;
+    color: $color-white;
+    z-index: 2;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-blue-light;
+    }
+  }
+
+  &__border {
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 28.5rem;
+    height: 0;
+    padding: 0;
+
+    z-index: 1;
+    pointer-events: none;
+
+    &--light {
+      clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
+      border: 2.8rem solid $color-blue-light;
+    }
+
+    &--dark {
+      clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
+      border: 2.8rem solid $color-blue-dark;
+    }
+  }
+
+  &__img--mail {
+    width: fit-content;
+  }
+
+  &__img--mail:hover {
+    content: url(../public/icn_mail_hover.svg);
+  }
+  &__img--mail:active {
+    content: url(../public/icn_mail_down.svg);
   }
 }

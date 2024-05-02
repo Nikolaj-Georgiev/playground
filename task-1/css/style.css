@@ -22,6 +22,10 @@ body {
   min-height: 100vh;
 }
 
+.btn__wrapper--2, .btn__wrapper--1 {
+  position: relative;
+}
+
 .first {
   column-gap: 5rem;
 }
@@ -77,16 +81,79 @@ body {
   grid-row: 4/5;
 }
 
-.btn__dark-blue {
+.btn__wrapper--1 {
+  grid-column: 1/2;
   grid-row: 3/4;
 }
-.btn__light-blue {
+.btn__wrapper--2 {
+  grid-column: 1/2;
   grid-row: 4/5;
+}
+
+.btn {
+  margin-left: 9rem;
+  position: relative;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  padding-right: 9.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 3.5rem) 100%, 0 100%);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: start;
+}
+.btn__dark-blue {
+  background-color: #004f6e;
+  color: #fff;
+  z-index: 2;
+}
+.btn__dark-blue:hover {
+  background-color: #fff;
+  color: #004f6e;
+}
+.btn__light-blue {
+  background-color: #3cb3b9;
+  color: #fff;
+  z-index: 2;
+}
+.btn__light-blue:hover {
+  background-color: #fff;
+  color: #3cb3b9;
+}
+.btn__border {
+  position: absolute;
+  top: -2px;
+  left: -3px;
+  width: 28.5rem;
+  height: 0;
+  padding: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.btn__border--light {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
+  border: 2.8rem solid #3cb3b9;
+}
+.btn__border--dark {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
+  border: 2.8rem solid #004f6e;
+}
+.btn__img--mail {
+  width: fit-content;
+}
+.btn__img--mail:hover {
+  content: url(../public/icn_mail_hover.svg);
+}
+.btn__img--mail:active {
+  content: url(../public/icn_mail_down.svg);
 }
 
 .container {
   display: grid;
-  grid-template-rows: minmax(35%, min-content) minmax(65%, min-content);
+  grid-template-rows: minmax(35%, max-content) minmax(65%, max-content);
 }
 
 .first {
@@ -95,8 +162,9 @@ body {
   height: 100%;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(10%, min-content) 60% repeat(2, 15%);
+  grid-template-rows: minmax(10%, max-content) 60% repeat(2, 15%);
   display: grid;
+  row-gap: 2rem;
 }
 
 .second {
