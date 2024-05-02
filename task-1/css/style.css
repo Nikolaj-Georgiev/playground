@@ -44,14 +44,15 @@ body {
 }
 .first__title {
   grid-column: 1/2;
-  margin-left: 5rem;
-  font-size: 5rem;
-  width: max-content;
-  height: max-content;
   display: flex;
   flex-direction: column;
+  width: max-content;
+  height: max-content;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
   padding: 1rem 4rem;
-  margin-top: 5rem;
+  font-size: 5rem;
   gap: 0.5rem;
   line-height: 1;
   border-right: 2px solid #888;
@@ -59,18 +60,43 @@ body {
 }
 .first__logo {
   grid-column: 2/3;
+  grid-row: 2/3;
   margin-right: 5rem;
+  margin-top: 2rem;
+  align-content: center;
+  justify-content: start;
 }
+.first__logo--img {
+  display: block;
+  height: 100%;
+  max-width: 50rem;
+  object-fit: contain;
+}
+.first__ring {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.btn__dark-blue {
+  grid-row: 3/4;
+}
+.btn__light-blue {
+  grid-row: 4/5;
+}
+
 .container {
   display: grid;
-  grid-template-rows: 35% 65%;
+  grid-template-rows: minmax(35%, min-content) minmax(65%, min-content);
 }
 
 .first {
-  height: 70vh;
-  display: grid;
+  margin: 0 auto;
+  grid-row: 1/2;
+  height: 100%;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(10%, min-content) 50% repeat(2, 15%);
+  grid-template-rows: minmax(10%, min-content) 60% repeat(2, 15%);
+  display: grid;
 }
 
 .second {

@@ -1,14 +1,18 @@
 .container {
+  // max-width: 120rem;
   display: grid;
-  grid-template-rows: 35% 65%;
+  grid-template-rows: minmax(35%, min-content) minmax(65%, min-content);
 }
 
 .first {
-  height: 70vh;
-  // background-color: orangered;
-  display: grid;
+  // width: 120rem;
+  margin: 0 auto;
+  grid-row: 1 / 2;
+  height: 100%;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(10%, min-content) 50% repeat(2, 15%);
+  grid-template-rows: minmax(10%, min-content) 60% repeat(2, 15%);
+  display: grid;
 }
 
 .second {
