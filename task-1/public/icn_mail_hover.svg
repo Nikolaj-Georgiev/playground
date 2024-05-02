@@ -1,0 +1,19 @@
+<svg id="icn_mail_hover.svg" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #0098a0;
+      }
+    </style>
+  </defs>
+  <path id="fill" class="cls-1" d="M422,2659.27l28.99-.26v19.98l-28.99-.26v-19.46Z" transform="translate(-415 -2648.5)"/>
+  <path id="boarder" class="cls-2" d="M451,2659H421c-0.914,0-1,.2-1,1.05V2679c0,0.85.086,1,1,1h30a1.209,1.209,0,0,0,1-1v-19C452,2659.15,451.914,2659,451,2659Zm-2,2-12,10a1.721,1.721,0,0,1-2.286-.11C431.957,2668.68,423,2661,423,2661h26Zm1,17H422v-15s11.5,9.49,12,10c1.99,1.99,2,2,4,0,0.486-.49,12-10,12-10v15Z" transform="translate(-415 -2648.5)"/>
+</svg>

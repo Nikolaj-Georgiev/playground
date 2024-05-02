@@ -1,0 +1,43 @@
+<svg id="icn_pi_down.svg" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004f6e;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #0098a0;
+      }
+
+      .cls-4 {
+        fill: #4eb7ba;
+      }
+    </style>
+  </defs>
+  <rect id="grounded" class="cls-1" y="26.5" width="42" height="12"/>
+  <path id="fill" class="cls-2" d="M521,2748h30l-0.01,29.99-29.99-.26V2748Z" transform="translate(-515 -2743.5)"/>
+  <path id="boarder" class="cls-3" d="M551,2747c0.914,0,1,.15,1,1v30a1.208,1.208,0,0,1-1,1H521c-0.913,0-1-.15-1-1v-29.95c0-.85.087-1.05,1-1.05h30Zm-3,2v28H524v-28h24Z" transform="translate(-515 -2743.5)"/>
+  <g id="graphics">
+    <g id="sidebard">
+      <rect class="cls-4" x="7" y="19.5" width="2" height="14"/>
+      <rect id="Rectangle_693_copy" data-name="Rectangle 693 copy" class="cls-4" x="33" y="19.5" width="2" height="14"/>
+    </g>
+    <rect id="headline" class="cls-4" x="22" y="8.5" width="9" height="4"/>
+    <path id="PI" class="cls-3" d="M533,2764v-12h2v12h-2Zm-5,0h-2v-12h6v8h-4v4Zm2-6v-4h-2v4h2Z" transform="translate(-515 -2743.5)"/>
+    <g id="words">
+      <rect id="headline_copy" data-name="headline copy" class="cls-4" x="22" y="14.5" width="9" height="2"/>
+      <rect id="headline_copy_2" data-name="headline copy 2" class="cls-4" x="22" y="18.5" width="9" height="2"/>
+      <rect id="Rectangle_594_copy_4" data-name="Rectangle 594 copy 4" class="cls-4" x="11" y="22.5" width="20" height="2"/>
+      <rect id="Rectangle_594_copy_6" data-name="Rectangle 594 copy 6" class="cls-4" x="11" y="26.5" width="20" height="2"/>
+      <rect id="Rectangle_594_copy_8" data-name="Rectangle 594 copy 8" class="cls-4" x="11" y="30.5" width="20" height="2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg id="icn_mail_down.svg" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004f6e;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #0098a0;
+      }
+    </style>
+  </defs>
+  <rect id="grounded" class="cls-1" y="21" width="42" height="12"/>
+  <path id="fill" class="cls-2" d="M522,2661.27l28.99-.26v19.98l-28.99-.26v-19.46Z" transform="translate(-515 -2652)"/>
+  <path id="boarder" class="cls-3" d="M551,2661H521c-0.914,0-1,.2-1,1.05V2681c0,0.85.086,1,1,1h30a1.209,1.209,0,0,0,1-1v-19C552,2661.15,551.914,2661,551,2661Zm-2,2-12,10a1.721,1.721,0,0,1-2.286-.11C531.957,2670.68,523,2663,523,2663h26Zm1,17H522v-15s11.5,9.49,12,10c1.99,1.99,2,2,4,0,0.486-.49,12-10,12-10v15Z" transform="translate(-515 -2652)"/>
+</svg>
