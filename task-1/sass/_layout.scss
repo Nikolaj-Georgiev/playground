@@ -1,13 +1,14 @@
 .container {
   display: grid;
-  grid-template-rows: 35vh 65vh;
+  grid-template-rows: 35% 65%;
 }
 
 .first {
-  background-color: orangered;
+  height: 70vh;
+  // background-color: orangered;
   display: grid;
-  grid-template-columns: repeat(2, minmax(50%, 1fr));
-  grid-template-rows: 5% repeat(2, 40%) repeat(2, 10%);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(10%, min-content) 50% repeat(2, 15%);
 }
 
 .second {
