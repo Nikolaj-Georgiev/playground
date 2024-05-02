@@ -32,9 +32,10 @@
     margin-bottom: 5rem;
     padding: 1rem 4rem;
     font-size: 5rem;
+    font-weight: 700;
     gap: 0.5rem;
     line-height: 1;
-    border-right: 2px solid #888;
+    border-right: 3px solid #ddd;
     color: $color-blue-dark;
 
     &--1 {
@@ -84,7 +85,7 @@
   position: relative;
   border: none;
   padding: 0.5rem 0.5rem;
-  padding-right: 9.5rem;
+  padding-right: 11.3rem;
   font-size: 1.6rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -95,6 +96,8 @@
   justify-content: start;
 
   &__dark-blue {
+    padding-right: 5.1rem;
+
     background-color: $color-blue-dark;
     color: $color-white;
     z-index: 2;
@@ -119,7 +122,6 @@
     position: absolute;
     top: -2px;
     left: -3px;
-    width: 28.5rem;
     height: 0;
     padding: 0;
 
@@ -129,11 +131,13 @@
     &--light {
       clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
       border: 2.8rem solid $color-blue-light;
+      width: 30.3rem;
     }
 
     &--dark {
       clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
       border: 2.8rem solid $color-blue-dark;
+      width: 35rem;
     }
   }
 
@@ -146,5 +150,15 @@
   }
   &__img--mail:active {
     content: url(../public/icn_mail_down.svg);
+  }
+  &__img--pi {
+    width: fit-content;
+  }
+
+  &__img--pi:hover {
+    content: url(../public/icn_pi_hover.svg);
+  }
+  &__img--pi:active {
+    content: url(../public/icn_pi_down.svg);
   }
 }

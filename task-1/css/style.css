@@ -57,9 +57,10 @@ body {
   margin-bottom: 5rem;
   padding: 1rem 4rem;
   font-size: 5rem;
+  font-weight: 700;
   gap: 0.5rem;
   line-height: 1;
-  border-right: 2px solid #888;
+  border-right: 3px solid #ddd;
   color: #004f6e;
 }
 .first__logo {
@@ -95,7 +96,7 @@ body {
   position: relative;
   border: none;
   padding: 0.5rem 0.5rem;
-  padding-right: 9.5rem;
+  padding-right: 11.3rem;
   font-size: 1.6rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -106,6 +107,7 @@ body {
   justify-content: start;
 }
 .btn__dark-blue {
+  padding-right: 5.1rem;
   background-color: #004f6e;
   color: #fff;
   z-index: 2;
@@ -127,7 +129,6 @@ body {
   position: absolute;
   top: -2px;
   left: -3px;
-  width: 28.5rem;
   height: 0;
   padding: 0;
   z-index: 1;
@@ -136,10 +137,12 @@ body {
 .btn__border--light {
   clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
   border: 2.8rem solid #3cb3b9;
+  width: 30.3rem;
 }
 .btn__border--dark {
   clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
   border: 2.8rem solid #004f6e;
+  width: 35rem;
 }
 .btn__img--mail {
   width: fit-content;
@@ -150,10 +153,20 @@ body {
 .btn__img--mail:active {
   content: url(../public/icn_mail_down.svg);
 }
+.btn__img--pi {
+  width: fit-content;
+}
+.btn__img--pi:hover {
+  content: url(../public/icn_pi_hover.svg);
+}
+.btn__img--pi:active {
+  content: url(../public/icn_pi_down.svg);
+}
 
 .container {
   display: grid;
   grid-template-rows: minmax(35%, max-content) minmax(65%, max-content);
+  row-gap: 20rem;
 }
 
 .first {
