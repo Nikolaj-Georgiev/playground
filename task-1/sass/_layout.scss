@@ -1,11 +1,9 @@
 .container {
-  // max-width: 120rem;
   display: grid;
   grid-template-rows: minmax(35%, min-content) minmax(65%, min-content);
 }
 
 .first {
-  // width: 120rem;
   margin: 0 auto;
   grid-row: 1 / 2;
   height: 100%;
