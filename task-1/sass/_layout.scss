@@ -9,9 +9,9 @@
   grid-row: 1 / 2;
   height: 100%;
   width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(10%, max-content) 60% repeat(2, 15%);
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: minmax(10%, min-content) 60% repeat(2, 15%);
   row-gap: 2rem;
 }
 

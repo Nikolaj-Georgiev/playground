@@ -105,25 +105,30 @@ body {
   gap: 0.5rem;
   align-items: center;
   justify-content: start;
+  backface-visibility: hidden;
 }
 .btn__dark-blue {
   padding-right: 5.1rem;
   background-color: #004f6e;
   color: #fff;
   z-index: 2;
+  backface-visibility: hidden;
 }
 .btn__dark-blue:hover {
   background-color: #fff;
   color: #004f6e;
+  backface-visibility: hidden;
 }
 .btn__light-blue {
   background-color: #3cb3b9;
   color: #fff;
   z-index: 2;
+  backface-visibility: hidden;
 }
 .btn__light-blue:hover {
   background-color: #fff;
   color: #3cb3b9;
+  backface-visibility: hidden;
 }
 .btn__border {
   position: absolute;
@@ -133,19 +138,23 @@ body {
   padding: 0;
   z-index: 1;
   pointer-events: none;
+  backface-visibility: hidden;
 }
 .btn__border--light {
   clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
   border: 2.8rem solid #3cb3b9;
   width: 30.3rem;
+  backface-visibility: hidden;
 }
 .btn__border--dark {
   clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
   border: 2.8rem solid #004f6e;
   width: 35rem;
+  backface-visibility: hidden;
 }
 .btn__img--mail {
   width: fit-content;
+  backface-visibility: hidden;
 }
 .btn__img--mail:hover {
   content: url(../public/icn_mail_hover.svg);
@@ -162,6 +171,9 @@ body {
 .btn__img--pi:active {
   content: url(../public/icn_pi_down.svg);
 }
+.btn__text {
+  text-transform: uppercase;
+}
 
 .container {
   display: grid;
@@ -174,9 +186,8 @@ body {
   grid-row: 1/2;
   height: 100%;
   width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(10%, max-content) 60% repeat(2, 15%);
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 2rem;
 }
 

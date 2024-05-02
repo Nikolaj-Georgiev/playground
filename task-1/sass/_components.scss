@@ -94,6 +94,7 @@
   gap: 0.5rem;
   align-items: center;
   justify-content: start;
+  backface-visibility: hidden;
 
   &__dark-blue {
     padding-right: 5.1rem;
@@ -101,20 +102,24 @@
     background-color: $color-blue-dark;
     color: $color-white;
     z-index: 2;
+    backface-visibility: hidden;
 
     &:hover {
       background-color: $color-white;
       color: $color-blue-dark;
+      backface-visibility: hidden;
     }
   }
   &__light-blue {
     background-color: $color-blue-light;
     color: $color-white;
     z-index: 2;
+    backface-visibility: hidden;
 
     &:hover {
       background-color: $color-white;
       color: $color-blue-light;
+      backface-visibility: hidden;
     }
   }
 
@@ -127,22 +132,26 @@
 
     z-index: 1;
     pointer-events: none;
+    backface-visibility: hidden;
 
     &--light {
       clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
       border: 2.8rem solid $color-blue-light;
       width: 30.3rem;
+      backface-visibility: hidden;
     }
 
     &--dark {
       clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
       border: 2.8rem solid $color-blue-dark;
       width: 35rem;
+      backface-visibility: hidden;
     }
   }
 
   &__img--mail {
     width: fit-content;
+    backface-visibility: hidden;
   }
 
   &__img--mail:hover {
@@ -160,5 +169,9 @@
   }
   &__img--pi:active {
     content: url(../public/icn_pi_down.svg);
+  }
+
+  &__text {
+    text-transform: uppercase;
   }
 }
