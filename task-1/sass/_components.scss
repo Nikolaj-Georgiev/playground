@@ -122,13 +122,16 @@
 
   &__border {
     position: absolute;
-    top: -2px;
+    top: -3px;
     left: -3px;
-    height: 0;
+    height: 100%;
+    width: 100%;
     padding: 0;
+    border-width: 0.2rem;
+    border-style: solid;
+    pointer-events: none;
 
     z-index: 1;
-    pointer-events: none;
 
     &--light {
       clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
@@ -140,13 +143,14 @@
     &--dark {
       clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
       border: 2.9rem solid $color-blue-dark;
-      width: 37.2rem;
+      width: 37.3rem;
       backface-visibility: hidden;
     }
   }
 
   &__img--mail {
-    width: fit-content;
+    width: auto;
+    transition: all 0.2s;
     backface-visibility: hidden;
   }
 
@@ -157,7 +161,9 @@
     content: url(../public/icn_mail_down.svg);
   }
   &__img--pi {
-    width: fit-content;
+    width: auto;
+    transition: all 0.2s;
+    backface-visibility: hidden;
   }
 
   &__img--pi:hover {

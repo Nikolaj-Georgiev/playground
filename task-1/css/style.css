@@ -129,12 +129,15 @@ body {
 }
 .btn__border {
   position: absolute;
-  top: -2px;
+  top: -3px;
   left: -3px;
-  height: 0;
+  height: 100%;
+  width: 100%;
   padding: 0;
-  z-index: 1;
+  border-width: 0.2rem;
+  border-style: solid;
   pointer-events: none;
+  z-index: 1;
 }
 .btn__border--light {
   clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
@@ -145,11 +148,12 @@ body {
 .btn__border--dark {
   clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
   border: 2.9rem solid #004f6e;
-  width: 37.2rem;
+  width: 37.3rem;
   backface-visibility: hidden;
 }
 .btn__img--mail {
-  width: fit-content;
+  width: auto;
+  transition: all 0.2s;
   backface-visibility: hidden;
 }
 .btn__img--mail:hover {
@@ -159,7 +163,9 @@ body {
   content: url(../public/icn_mail_down.svg);
 }
 .btn__img--pi {
-  width: fit-content;
+  width: auto;
+  transition: all 0.2s;
+  backface-visibility: hidden;
 }
 .btn__img--pi:hover {
   content: url(../public/icn_pi_hover.svg);
