@@ -88,10 +88,15 @@ body {
 .btn__wrapper--1 {
   grid-column: 1/2;
   grid-row: 3/4;
+  transition: all 0.2s;
+  backface-visibility: hidden;
 }
 .btn__wrapper--2 {
   grid-column: 1/2;
   grid-row: 4/5;
+  position: relative;
+  transition: all 0.2s;
+  backface-visibility: hidden;
 }
 
 .btn {
@@ -129,6 +134,10 @@ body {
 .btn__light-blue:hover {
   background-color: #fff;
   color: #3cb3b9;
+}
+.btn__light-blue:hover ~ .triangle {
+  transform: translateY(-10rem);
+  transform: translate(500%, 450%); /* Adjust position */
 }
 .btn__border {
   position: absolute;
@@ -175,6 +184,19 @@ body {
 }
 .btn__text {
   text-transform: uppercase;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.5rem solid #3cb3b9; /* Same color as the button */
+  position: absolute;
+  left: 0%; /* Center horizontally */
+  top: 0%; /* Position below the button */
+  transform: translate(500%, 400%); /* Adjust position */
+  margin-top: 5px; /* Adjust space between button and triangle */
 }
 
 .container {
