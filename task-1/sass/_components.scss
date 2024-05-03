@@ -1,6 +1,4 @@
 .first {
-  column-gap: 5rem;
-
   &__heading {
     display: grid;
     grid-column: 1 /-1;
@@ -37,12 +35,6 @@
     line-height: 1;
     border-right: 3px solid #ddd;
     color: $color-blue-dark;
-
-    &--1 {
-      // margin-top: 5rem;
-    }
-    &--2 {
-    }
   }
 
   &__logo {
@@ -64,6 +56,12 @@
   &__ring {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+    align-self: self-start;
+    justify-self: end;
+    transform: translateX(-65%) translateY(20%) rotate(330deg);
+    &--img {
+      width: 250%;
+    }
   }
 }
 
@@ -97,7 +95,7 @@
 
   &__dark-blue {
     padding-right: 5.1rem;
-
+    margin-bottom: 10rem;
     background-color: $color-blue-dark;
     color: $color-white;
     z-index: 2;
