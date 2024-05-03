@@ -139,6 +139,30 @@ body {
   transform: translateY(-10rem);
   transform: translate(500%, 450%); /* Adjust position */
 }
+.btn__text {
+  text-align: center;
+}
+.btn__text--span {
+  display: inline-block;
+  height: 1rem;
+  width: 1.5rem;
+  margin-left: 1rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.btn__pink {
+  margin-left: 0;
+  padding: 1.5rem 2rem;
+  padding-right: 18rem;
+  background-color: #c72c90;
+  color: #fff;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+.btn__pink:hover {
+  background-color: #fff;
+  color: #c72c90;
+}
 .btn__border {
   position: absolute;
   top: -3px;

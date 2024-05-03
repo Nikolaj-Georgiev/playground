@@ -52,7 +52,7 @@
       <section class="second">
         <div class="second__wrapper">
           <h2 class="second__heading">Sign up for updates</h2>
-          <form action="post" class="form">
+          <form id="demo-form" action="post" class="form">
             <div class="form__row--wrapper">
               <div class="form__group form__group--1">
                 <label for="firstName" class="form__label">FIRST*</label>
@@ -74,15 +74,21 @@
             <p class="form__text--2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad id ipsum
               accusamus enim aspernatur, consequuntur, minima, optio ipsa ipsam obcaecati eligendi.</p>
             <div class="g-recaptcha" data-sitekey="6LcCSM8pAAAAADie4w-uWMc5x01oTpWonIj15SBH"></div>
+            <div class="btn__wrapper--3">
+              <button class="btn btn__pink">
+                <p class="btn__text">Submit<span class="btn__text--span">&rarr;</span> </p>
+              </button>
+              <div class="btn btn__border btn__border--pink"></div>
+            </div>
           </form>
         </div>
       </section>
     </main>
-    <script>
+    <!-- <script>
       function onSubmit(token) {
         document.getElementById("demo-form").submit();
       }
-    </script>
+    </script> -->
   </body>
 
 </html>
