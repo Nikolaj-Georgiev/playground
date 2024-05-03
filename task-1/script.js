@@ -1,4 +1,4 @@
-var _a;
+var _a, _b;
 (_a = document.querySelector('.btn__dark-blue')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
     var textContent = 'This is a test text, created for the exercise purposes, you can add a lot of bullsh*t here :)!\n';
     var blob = new Blob([textContent], { type: 'text/plain' });
@@ -8,4 +8,8 @@ var _a;
     link.download = 'test.txt';
     link.click();
     URL.revokeObjectURL(url);
+});
+(_b = document.querySelector('.btn__light-blue')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', function () {
+    var _a;
+    (_a = document.querySelector('.second')) === null || _a === void 0 ? void 0 : _a.scrollIntoView({ behavior: 'smooth' });
 });

@@ -11,7 +11,8 @@
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "sass css/style.prefix.css css/style.css --style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
-    "watch": "npx tsc script.ts --watch"
+    "watch": "npx tsc script.ts --watch",
+    "build:ts": "npx tsc script.ts"
   },
   "author": "Niko",
   "license": "ISC",

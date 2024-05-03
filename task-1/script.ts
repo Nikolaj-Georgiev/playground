@@ -9,3 +9,7 @@ document.querySelector('.btn__dark-blue')?.addEventListener('click', () => {
   link.click();
   URL.revokeObjectURL(url);
 });
+
+document.querySelector('.btn__light-blue')?.addEventListener('click', () => {
+  document.querySelector('.second')?.scrollIntoView({ behavior: 'smooth' });
+});
