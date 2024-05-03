@@ -30,4 +30,6 @@ body {
 
 %wrapper {
   position: relative;
+  backface-visibility: hidden;
+  transition: all 0.2s;
 }
