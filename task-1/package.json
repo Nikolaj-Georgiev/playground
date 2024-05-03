@@ -10,7 +10,8 @@
     "compile:sass": "sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "sass css/style.prefix.css css/style.css --style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "watch": "npx tsc script.ts --watch"
   },
   "author": "Niko",
   "license": "ISC",

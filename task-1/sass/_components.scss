@@ -243,9 +243,11 @@
 
 .second {
   &__wrapper {
+    background-color: $color-white;
     grid-column: 1 / 2;
     width: fit-content;
     margin-left: 9rem;
+    margin-bottom: -10rem;
     z-index: 5;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
     display: flex;
@@ -260,6 +262,20 @@
     color: $color-white;
     padding: 2rem 4rem;
     padding-left: 5rem;
+  }
+
+  &__ring {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    transform: translateX(-65%) translateY(20%) rotate(330deg);
+    position: relative;
+    &--img {
+      position: absolute;
+      top: -40rem;
+      right: -15rem;
+      height: 90rem;
+      width: 90rem;
+    }
   }
 }
 
@@ -299,6 +315,10 @@
     font-weight: 500;
     color: $color-blue-light;
     font-size: 1.6rem;
+  }
+
+  &__required {
+    margin-bottom: -2rem;
   }
 }
 

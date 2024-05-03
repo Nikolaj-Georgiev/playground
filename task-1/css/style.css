@@ -241,9 +241,11 @@ body {
 }
 
 .second__wrapper {
+  background-color: #fff;
   grid-column: 1/2;
   width: fit-content;
   margin-left: 9rem;
+  margin-bottom: -10rem;
   z-index: 5;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
   display: flex;
@@ -257,6 +259,19 @@ body {
   color: #fff;
   padding: 2rem 4rem;
   padding-left: 5rem;
+}
+.second__ring {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  transform: translateX(-65%) translateY(20%) rotate(330deg);
+  position: relative;
+}
+.second__ring--img {
+  position: absolute;
+  top: -40rem;
+  right: -15rem;
+  height: 90rem;
+  width: 90rem;
 }
 
 .form {
@@ -291,6 +306,9 @@ body {
   font-weight: 500;
   color: #3cb3b9;
   font-size: 1.6rem;
+}
+.form__required {
+  margin-bottom: -2rem;
 }
 
 .checkbox__container {
