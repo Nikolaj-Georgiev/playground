@@ -96,7 +96,7 @@ body {
   position: relative;
   border: none;
   padding: 0.5rem 0.5rem;
-  padding-right: 11.3rem;
+  padding-right: 12.1rem;
   font-size: 1.6rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -105,7 +105,6 @@ body {
   gap: 0.5rem;
   align-items: center;
   justify-content: start;
-  backface-visibility: hidden;
 }
 .btn__dark-blue {
   padding-right: 5.1rem;
@@ -117,7 +116,6 @@ body {
 .btn__dark-blue:hover {
   background-color: #fff;
   color: #004f6e;
-  backface-visibility: hidden;
 }
 .btn__light-blue {
   background-color: #3cb3b9;
@@ -128,7 +126,6 @@ body {
 .btn__light-blue:hover {
   background-color: #fff;
   color: #3cb3b9;
-  backface-visibility: hidden;
 }
 .btn__border {
   position: absolute;
@@ -138,18 +135,17 @@ body {
   padding: 0;
   z-index: 1;
   pointer-events: none;
-  backface-visibility: hidden;
 }
 .btn__border--light {
   clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
-  border: 2.8rem solid #3cb3b9;
-  width: 30.3rem;
+  border: 2.9rem solid #3cb3b9;
+  width: 32.5rem;
   backface-visibility: hidden;
 }
 .btn__border--dark {
   clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
-  border: 2.8rem solid #004f6e;
-  width: 35rem;
+  border: 2.9rem solid #004f6e;
+  width: 37.2rem;
   backface-visibility: hidden;
 }
 .btn__img--mail {

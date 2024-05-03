@@ -85,7 +85,7 @@
   position: relative;
   border: none;
   padding: 0.5rem 0.5rem;
-  padding-right: 11.3rem;
+  padding-right: 12.1rem;
   font-size: 1.6rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -94,7 +94,6 @@
   gap: 0.5rem;
   align-items: center;
   justify-content: start;
-  backface-visibility: hidden;
 
   &__dark-blue {
     padding-right: 5.1rem;
@@ -107,7 +106,6 @@
     &:hover {
       background-color: $color-white;
       color: $color-blue-dark;
-      backface-visibility: hidden;
     }
   }
   &__light-blue {
@@ -119,7 +117,6 @@
     &:hover {
       background-color: $color-white;
       color: $color-blue-light;
-      backface-visibility: hidden;
     }
   }
 
@@ -132,19 +129,18 @@
 
     z-index: 1;
     pointer-events: none;
-    backface-visibility: hidden;
 
     &--light {
       clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
-      border: 2.8rem solid $color-blue-light;
-      width: 30.3rem;
+      border: 2.9rem solid $color-blue-light;
+      width: 32.5rem;
       backface-visibility: hidden;
     }
 
     &--dark {
       clip-path: polygon(0 0, 100% 0, calc(100% - 3.7rem) 100%, 0 100%);
-      border: 2.8rem solid $color-blue-dark;
-      width: 35rem;
+      border: 2.9rem solid $color-blue-dark;
+      width: 37.2rem;
       backface-visibility: hidden;
     }
   }
