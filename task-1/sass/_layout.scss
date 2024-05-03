@@ -11,12 +11,13 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  // grid-template-rows: minmax(10%, max-content) 60% repeat(2, 15%);
+  grid-template-rows: minmax(10%, max-content) 60% repeat(2, 10%);
   row-gap: 2rem;
   column-gap: 5rem;
 }
 
 .second {
+  margin-top: 8rem;
   background-color: transparent;
   grid-row: 2 / 3;
   height: 100%;

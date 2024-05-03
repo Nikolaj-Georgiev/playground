@@ -10,7 +10,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="script.js" defer></script>
+    <script src="script.js" type="module"></script>
     <title>Task</title>
   </head>
 
@@ -67,14 +67,37 @@
               <label for="email" class="form__label">EMAIL*</label>
               <input type="email" class="form__input" id="email" required maxlength="10ch">
             </div>
+            <div class="form__group">
+              <label class="checkbox__container">
+                <input type="checkbox" id="age" name="age">
+                <label for="age">*I am 18 years of age or older</label>
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="form__group">
+              <label class="checkbox__container">
+                <input type="checkbox" id="agreement" name="agreement">
+                *I agree to the statemets below and have read and accept the <b>Legal
+                  Notice</b> and <b>Privacy Notice</b>
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <span class="all-fields-required">*All fields required.</span>
+            <p class="messages"></p>
             <p class="form__text--1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam praesentium
               accusamus delectus in consectetur, assumenda incidunt suscipit veniam eveniet quaerat dolore minima vero
               totam voluptatum earum. Eos soluta optio excepturi? Ducimus quasi numquam fugiat, iste error minima
               exercitationem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sint, sequi alias,
               corrupti quidem expedita dolore laborum iusto praesentium temporibus pariatur? Rerum, nulla sed! Quaerat
+              est reprehenderit aut at debitis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sint,
+              sequi alias,
+              corrupti quidem expedita dolore laborum iusto praesentium temporibus pariatur? Rerum, nulla sed! Quaerat
               est reprehenderit aut at debitis!</p>
             <p class="form__text--2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad id ipsum
-              accusamus enim aspernatur, consequuntur, minima, optio ipsa ipsam obcaecati eligendi.</p>
+              accusamus enim aspernatur, consequuntur, minima, optio ipsa ipsam obcaecati eligendi. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Accusantium ad id ipsum accusamus enim aspernatur, consequuntur,
+              minima, optio ipsa ipsam obcaecati eligendi.</p>
             <div class="g-recaptcha" data-sitekey="6LcCSM8pAAAAADie4w-uWMc5x01oTpWonIj15SBH"></div>
             <div class="btn__wrapper--3">
               <button class="btn btn__pink">
