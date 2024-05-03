@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="script.js" type="module"></script>
     <title>Task</title>
   </head>
@@ -33,14 +32,14 @@
         <div class="btn__wrapper--1">
           <button class="btn btn__dark-blue">
             <img src="/public/icn_pi_default.svg" alt="icon of a chart" class="btn__img--pi">
-            <p class="btn__text">See Prescribing information</p>
+            <p class="btn__text btn__text--1">See Prescribing information</p>
           </button>
           <div class="btn btn__border btn__border--dark"></div>
         </div>
         <div class="btn__wrapper--2">
           <button class="btn btn__light-blue">
             <img src="/public/icn_mail_default.svg" alt="icon of a mail" class="btn__img--mail">
-            <p class="btn__text">Stay connected</p>
+            <p class="btn__text btn__text--2">Stay connected</p>
           </button>
           <div class="triangle"></div>
           <div class="btn btn__border btn__border--light"></div>
@@ -65,26 +64,26 @@
             </div>
             <div class="form__group form__group--3">
               <label for="email" class="form__label">EMAIL*</label>
-              <input type="email" class="form__input" id="email" required maxlength="10ch">
+              <input type="email" class="form__input" id="email" required>
+              <span id="email-error" style="color: red; display: none;">Invalid email address</span>
             </div>
             <div class="form__group">
               <label class="checkbox__container">
-                <input type="checkbox" id="age" name="age">
+                <input type="checkbox" id="age" name="age" required>
                 <label for="age">*I am 18 years of age or older</label>
                 <span class="checkmark"></span>
               </label>
             </div>
             <div class="form__group">
               <label class="checkbox__container">
-                <input type="checkbox" id="agreement" name="agreement">
-                *I agree to the statemets below and have read and accept the <b>Legal
-                  Notice</b> and <b>Privacy Notice</b>
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">*I agree to the statements below and have read and accept the <b>Legal Notice</b>
+                  and <b>Privacy Notice</b></label>
                 <span class="checkmark"></span>
               </label>
             </div>
 
             <span class="form__required">*All fields required.</span>
-            <p class="form__messages"></p>
             <p class="form__text--1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam praesentium
               accusamus delectus in consectetur, assumenda incidunt suscipit veniam eveniet quaerat dolore minima vero
               totam voluptatum earum. Eos soluta optio excepturi? Ducimus quasi numquam fugiat, iste error minima
@@ -100,8 +99,8 @@
               minima, optio ipsa ipsam obcaecati eligendi.</p>
             <div class="g-recaptcha" data-sitekey="6LcCSM8pAAAAADie4w-uWMc5x01oTpWonIj15SBH"></div>
             <div class="btn__wrapper--3">
-              <button class="btn btn__pink">
-                <p class="btn__text">Submit<span class="btn__text--span">&rarr;</span> </p>
+              <button class="btn btn__pink" type="submit">
+                <p class="btn__text btn__text--3">Submit<span class="btn__text btn__text--span">&rarr;</span> </p>
               </button>
               <div class="btn btn__border btn__border--pink"></div>
             </div>
@@ -112,6 +111,7 @@
         </div>
       </section>
     </main>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- <script>
       function onSubmit(token) {
         document.getElementById("demo-form").submit();

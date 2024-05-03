@@ -12,6 +12,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -174,6 +175,26 @@ body {
   background-color: #fff;
   color: #c72c90;
 }
+.btn__pink.active:hover {
+  background-color: #3cb3b9;
+  color: #fff;
+  transition-delay: 0.4s;
+}
+.btn__pink::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #3cb3b9;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+}
+.btn__pink.active::before {
+  transform: scaleY(1.05);
+  width: 100%;
+}
 .btn__border {
   position: absolute;
   top: -3px;
@@ -307,9 +328,6 @@ body {
   color: #3cb3b9;
   font-size: 1.6rem;
 }
-.form__required {
-  margin-bottom: -2rem;
-}
 
 .checkbox__container {
   text-align: left;
@@ -380,8 +398,34 @@ body {
   transform: rotate(45deg);
 }
 
+.invalid {
+  border: 2px solid red;
+}
+
+.form__required.error {
+  color: red;
+}
+
+.success {
+  padding-left: 10rem;
+  z-index: 10;
+}
+
+.active {
+  padding-right: 8rem;
+}
+
+.final {
+  transform: translate(-31%, -0.5%);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 4rem) 100%, 0 100%);
+  border: 2.8rem solid #3cb3b9;
+  width: 29.2rem;
+  transition: all 0.2s;
+}
+
 .container {
   display: grid;
+  justify-content: center;
   grid-template-rows: minmax(35%, max-content) minmax(65%, max-content);
   row-gap: 20rem;
 }

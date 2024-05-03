@@ -1,5 +1,6 @@
 .container {
   display: grid;
+  justify-content: center;
   grid-template-rows: minmax(35%, max-content) minmax(65%, max-content);
   row-gap: 20rem;
 }

@@ -163,6 +163,28 @@
       background-color: $color-white;
       color: $color-pink-dark;
     }
+    &.active:hover {
+      background-color: $color-blue-light;
+      color: $color-white;
+      transition-delay: 0.4s;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: $color-blue-light;
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+        background-color 0.1s;
+    }
+    &.active::before {
+      transform: scaleY(1.05);
+      width: 100%;
+    }
   }
 
   &__border {
@@ -316,10 +338,6 @@
     color: $color-blue-light;
     font-size: 1.6rem;
   }
-
-  &__required {
-    margin-bottom: -2rem;
-  }
 }
 
 /////////////////
@@ -399,4 +417,29 @@
   border: solid $color-white;
   border-width: 0 0.4rem 0.4rem 0;
   transform: rotate(45deg);
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.form__required.error {
+  color: red;
+}
+
+.success {
+  padding-left: 10rem;
+  z-index: 10;
+}
+
+.active {
+  padding-right: 8rem;
+}
+
+.final {
+  transform: translate(-31%, -0.5%);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 4rem) 100%, 0 100%);
+  border: 2.8rem solid $color-blue-light;
+  width: 29.2rem;
+  transition: all 0.2s;
 }
