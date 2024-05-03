@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="script.js" defer></script>
     <title>Task</title>
   </head>
@@ -49,10 +50,39 @@
         </div>
       </section>
       <section class="second">
-        <form action="post" class="second__form">form</form>
+        <div class="second__wrapper">
+          <h2 class="second__heading">Sign up for updates</h2>
+          <form action="post" class="form">
+            <div class="form__row--wrapper">
+              <div class="form__group form__group--1">
+                <label for="firstName" class="form__label">FIRST*</label>
+                <input type="text" class="form__input" id="firstName" required maxlength="10ch">
+              </div>
+              <div class="form__group form__group--2">
+                <label for="lastName" class="form__label">LAST*</label>
+                <input type="text" class="form__input" id="lastName" required maxlength="10ch">
+              </div>
+            </div>
+            <div class="form__group form__group--3">
+              <label for="email" class="form__label">EMAIL*</label>
+              <input type="email" class="form__input" id="email" required maxlength="10ch">
+            </div>
+            <p class="form__text--1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam praesentium
+              accusamus delectus in consectetur, assumenda incidunt suscipit veniam eveniet quaerat dolore minima vero
+              totam voluptatum earum. Eos soluta optio excepturi? Ducimus quasi numquam fugiat, iste error minima
+              exercitationem.</p>
+            <p class="form__text--2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad id ipsum
+              accusamus enim aspernatur, consequuntur, minima, optio ipsa ipsam obcaecati eligendi.</p>
+            <div class="g-recaptcha" data-sitekey="6LcCSM8pAAAAADie4w-uWMc5x01oTpWonIj15SBH"></div>
+          </form>
+        </div>
       </section>
     </main>
-
+    <script>
+      function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
+    </script>
   </body>
 
 </html>

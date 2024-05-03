@@ -17,5 +17,12 @@
 }
 
 .second {
-  background-color: greenyellow;
+  background-color: transparent;
+  grid-row: 2 / 3;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 80% 1fr;
+  gap: 5rem;
 }
