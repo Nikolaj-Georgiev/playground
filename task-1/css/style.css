@@ -189,10 +189,10 @@ body {
   width: 3px;
   background-color: #3cb3b9;
   transform: scaleY(0);
-  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+  transition: transform 0.2s, width 0.2s cubic-bezier(1, 0, 0, 1) 0.1s, background-color 0.1s;
 }
 .btn__pink.active::before {
-  transform: scaleY(1.05);
+  transform: scaleY(1);
   width: 100%;
 }
 .btn__border {

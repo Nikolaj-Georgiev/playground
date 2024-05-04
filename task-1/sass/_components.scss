@@ -178,11 +178,11 @@
       width: 3px;
       background-color: $color-blue-light;
       transform: scaleY(0);
-      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+      transition: transform 0.2s, width 0.2s cubic-bezier(1, 0, 0, 1) 0.1s,
         background-color 0.1s;
     }
     &.active::before {
-      transform: scaleY(1.05);
+      transform: scaleY(1);
       width: 100%;
     }
   }
