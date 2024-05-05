@@ -53,22 +53,22 @@
       object-fit: contain;
     }
   }
-  &__ring {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    align-self: self-start;
-    justify-self: end;
-    transform: translateX(-65%) translateY(20%) rotate(330deg);
-    position: relative;
-    &--img {
-      position: absolute;
-      top: -20rem;
-      right: -10rem;
-      height: 90rem;
-      width: 90rem;
-      overflow: hidden;
-    }
-  }
+  // &__ring {
+  //   grid-column: 2 / 3;
+  //   grid-row: 4 / 5;
+  //   align-self: self-start;
+  //   justify-self: end;
+  //   transform: translateX(-65%) translateY(20%) rotate(330deg);
+  //   position: relative;
+  //   &--img {
+  //     position: absolute;
+  //     top: -20rem;
+  //     right: -10rem;
+  //     height: 90rem;
+  //     width: 90rem;
+  //     overflow: hidden;
+  //   }
+  // }
 }
 
 .btn__wrapper {
@@ -287,20 +287,20 @@
     padding-left: 5rem;
   }
 
-  &__ring {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    transform: translateX(-65%) translateY(20%) rotate(330deg);
-    position: relative;
-    &--img {
-      position: absolute;
-      top: -40rem;
-      right: -15rem;
-      height: 90rem;
-      width: 90rem;
-      overflow: hidden;
-    }
-  }
+  // &__ring {
+  //   grid-column: 1 / 2;
+  //   grid-row: 2 / 3;
+  //   transform: translateX(-65%) translateY(20%) rotate(330deg);
+  //   position: relative;
+  //   &--img {
+  //     position: absolute;
+  //     top: -40rem;
+  //     right: -15rem;
+  //     height: 90rem;
+  //     width: 90rem;
+  //     overflow: hidden;
+  //   }
+  // }
 }
 
 .form {

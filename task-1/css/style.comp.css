@@ -77,22 +77,6 @@ body {
   max-width: 50rem;
   object-fit: contain;
 }
-.first__ring {
-  grid-column: 2/3;
-  grid-row: 4/5;
-  align-self: self-start;
-  justify-self: end;
-  transform: translateX(-65%) translateY(20%) rotate(330deg);
-  position: relative;
-}
-.first__ring--img {
-  position: absolute;
-  top: -20rem;
-  right: -10rem;
-  height: 90rem;
-  width: 90rem;
-  overflow: hidden;
-}
 
 .btn__wrapper--1 {
   grid-column: 1/2;
@@ -281,20 +265,6 @@ body {
   color: #fff;
   padding: 2rem 4rem;
   padding-left: 5rem;
-}
-.second__ring {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  transform: translateX(-65%) translateY(20%) rotate(330deg);
-  position: relative;
-}
-.second__ring--img {
-  position: absolute;
-  top: -40rem;
-  right: -15rem;
-  height: 90rem;
-  width: 90rem;
-  overflow: hidden;
 }
 
 .form {
